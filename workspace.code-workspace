@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\java_codes"
+		},
+		{
+			"path": "..\\portfolio"
+		},
+		{
+			"path": "..\\weather app"
+		},
+		{
+			"path": "..\\break-out game"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SSP Game"
+	}
+}
