@@ -1,0 +1,149 @@
+body{
+  background:#a1d7ee;
+  font-family:"Varela Round", sans-serif;
+  font-size: 20px;
+}
+.message{
+  margin: 5em 0 2em;
+  text-align: center;
+}
+.images{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+
+header {
+  margin: 40px auto;
+  width:960px;
+}
+
+header img {
+  width: 100%;
+}
+
+#container {
+  margin: 0px auto;
+  padding: 20px 10px 20px 0px;
+  max-width: 960px;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 100%;
+}
+
+#banner-green {  
+  background-image: url('http://louvang.com/assets/img/greenBanner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 100%;
+  height: 50px;
+  text-align:center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding-top:25px;
+}
+
+
+
+
+
+.computer img,
+.player img{
+  width:75%;
+}
+.shakeComputer {
+  animation: shakeComputer 0.8s linear;
+}
+.shakePlayer {
+  animation: shakePlayer 0.8s linear;
+}
+.points {
+  margin: 2em 0;
+  text-align: center;
+}
+.computerPoints {
+  margin-left: 3em;
+}
+.playerPoints {
+  margin-right: 3em;
+}
+.options {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+}
+.options button {
+  background: none;
+  color: black;
+  font-family: "Poppins";
+  border: 1px solid black;
+  padding: 1em 2em;
+  border-radius: 7px;
+  width: 150px;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all linear;
+}
+.options button:hover {
+  background-color: rgb(87, 46, 126);
+  border: 1px solid darkcyan;
+}
+@keyframes shakeComputer {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shakePlayer {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#results {
+  text-align: center;
+}
+#results img{
+  max-width: 40%;
+  margin: 30px 30px 20px;
+}
+#you-lost {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+#you-won {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
