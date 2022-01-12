@@ -70,12 +70,12 @@
                     computer.classList.remove("shakeComputer");
                     player.classList.remove("shakePlayer");
 
-                    player.src = "./" + option.innerHTML + "Player.png";
+                    player.src = "./" + option.innerHTML.toLowerCase() + "Player.png";
 
                     const choice = ["STONE","PAPER","SCISSORS"];
                     let arrayNo = Math.floor(Math.random()*3);
                     let computerChoice = choice[arrayNo];
-                    computer.src = "./" + computerChoice + "Computer.png";
+                    computer.src = "./" + computerChoice.toLowerCase() + "Computer.png";
 
                     cPoints = parseInt(computerPoints.innerHTML);
                     pPoints = parseInt(playerPoints.innerHTML);
@@ -110,14 +110,14 @@
         function whowon(pPoints,cPoints)
         {
             console.log(cPoints,pPoints);
-            if(pPoints===5)
+            if(pPoints===3)
             {
                 const youwon=document.querySelector('#you-won')
                 youwon.style.display='block'
                 document.querySelector(".container").style.display="none"
 
             }
-             else if(cPoints===5)
+             else if(cPoints===3)
             {
                 const youlost=document.querySelector('#you-lost')
                 youlost.style.display='block'
